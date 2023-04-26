@@ -14,6 +14,10 @@ public:
 		Name = name;
 	}
 
+	void setAuthor(string author) {
+		Author = author;
+	}
+
 	
 
 
