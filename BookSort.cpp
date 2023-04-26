@@ -47,5 +47,35 @@ void sortByAuthor(TBook books[], int size) {
 	}
 }
 
+int main() {
+ifstream fin("books.txt");
+	if (!fin.is_open()) {
+		cout << "Error opening file";
+		return 1;
+	}
+
+	const int size = 5;
+	TBook books[size];
+	cout << " Before: " << endl;
+	for (int i = 0; i < size; i++) {
+		string name, author;
+		unsigned int count;
+		fin >> name >> author >> count;
+		books[i].setName(name);
+		books[i].setAuthor(author);
+		books[i].setCount(count);
+		cout << name << " " << author << " " << count << endl;
+	}
+
+	fin.close();
+
+	sortByAuthor(books, size);
+	cout << " After: " << endl;
+	for (int i = 0; i < size; i++) {
+		cout << books[i].getName() << " " << books[i].getAuthor() << " " << books[i].getCount() << endl;
+	}
+
+	return 0;
+}
 
 
