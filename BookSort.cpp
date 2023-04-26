@@ -30,5 +30,9 @@ public:
 		return Author;
 	}
 
+	unsigned int getCount() const {
+		return Count;
+	}
+};
 
 
