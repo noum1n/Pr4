@@ -35,4 +35,17 @@ public:
 	}
 };
 
+void sortByAuthor(TBook books[], int size) {
+	for (int i = 0; i < size - 1; i++) {
+		for (int j = 0; j < size - i - 1; j++) {
+			if (books[j].getAuthor() > books[j + 1].getAuthor()) {
+				TBook temp = books[j];
+				books[j] = books[j + 1];
+				books[j + 1] = temp;
+			}
+		}
+	}
+}
+
+
 
