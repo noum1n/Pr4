@@ -12,6 +12,10 @@ public:
 		Fcolor[2] = b;
 	}
 
+void get() {
+		std::cout << "	Color: " << Fcolor[0] << " " << Fcolor[1] << " " << Fcolor[2] << std::endl;
+	}
+};
 
 
 int main() {
