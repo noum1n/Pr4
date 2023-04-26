@@ -20,5 +20,10 @@ public:
 
 	void setCount(unsigned int count) {
 		Count = count;
+	}
+
+	string getName() const {
+		return Name;
+	}
 
 
