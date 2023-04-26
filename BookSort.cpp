@@ -18,6 +18,7 @@ public:
 		Author = author;
 	}
 
-	
+	void setCount(unsigned int count) {
+		Count = count;
 
 
